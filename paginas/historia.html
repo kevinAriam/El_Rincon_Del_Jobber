@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia - El Rincón del Jobber</title>
+    <link rel="stylesheet" href="../layout/styles/layout.css">
+    <style>
+        .personaje {
+            background-color: #fff0f6;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ff66b3;
+            border-radius: 8px;
+        }
+        .personaje img {
+            max-width: 200px;
+            border-radius: 12px;
+            margin-right: 15px;
+        }
+        .personaje-contenido {
+            display: flex;
+            align-items: flex-start;
+        }
+        .mas-info {
+            display: none;
+            margin-top: 10px;
+            background: #fce4ec;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .btn-mas {
+            background-color: #a64ac9;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            cursor: pointer;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        .btn-mas:hover {
+            background-color: #ff66b3;
+        }
+    </style>
+</head>
+<body>
+
+<header id="header">
+    <h1>El Rincón del Jobber</h1>
+    <p>Historias y personajes de Uma Musume Pretty Derby</p>
+</header>
+
+<nav id="mainav">
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="historia.html">Historia</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Personajes y sus Historias</h2>
+
+    <!-- Oguri Cap -->
+    <div class="personaje">
+        <div class="personaje-contenido">
+            <img src="img/oguri-cap.jpg" alt="Oguri Cap">
+            <div>
+                <h3>Oguri Cap</h3>
+                <p>Protagonista de <strong>Uma Musume: Cinderella Gray</strong>, Oguri Cap es una corredora legendaria que pasó de ser una promesa a convertirse en una campeona nacional. En el manga, enfrenta duras pruebas tras mudarse a Tokio, superando lesiones y presiones mediáticas.</p>
+                <button class="btn-mas" onclick="mostrarMas(this)">+ Más info</button>
+                <div class="mas-info">
+                    <h4>Build y Legados Recomendados</h4>
+                    <ul>
+                        <li>Fuerza principal en carreras largas (2400m+).</li>
+                        <li>Skills recomendadas: Recuperación de stamina, aumento de velocidad en rectas finales.</li>
+                        <li>Legados: “Spurt Final de Teio” y “Resistencia de McQueen”.</li>
+                    </ul>
+                    <h4>Apariciones</h4>
+                    <p>Anime: Cameos en temporadas 2 y 3.<br>
+                    Manga: Protagonista de *Cinderella Gray*.<br>
+                    Videojuego: Disponible en versiones japonesa y global.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Special Week -->
+    <div class="personaje">
+        <div class="personaje-contenido">
+            <img src="img/special-week.jpg" alt="Special Week">
+            <div>
+                <h3>Special Week</h3>
+                <p>Protagonista de la primera temporada del anime. Sueña con convertirse en la mejor Uma Musume de Japón para honrar a su madre adoptiva.</p>
+                <button class="btn-mas" onclick="mostrarMas(this)">+ Más info</button>
+                <div class="mas-info">
+                    <h4>Build y Legados</h4>
+                    <p>Ideal para carreras de media y larga distancia, con skills de velocidad y recuperación.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rice Shower -->
+    <div class="personaje">
+        <div class="personaje-contenido">
+            <img src="img/rice-shower.jpg" alt="Rice Shower">
+            <div>
+                <h3>Rice Shower</h3>
+                <p>Conocida como la “Ejecutora de Sueños”, su historia está marcada por victorias que arruinaron despedidas legendarias de otras corredoras.</p>
+                <button class="btn-mas" onclick="mostrarMas(this)">+ Más info</button>
+                <div class="mas-info">
+                    <p>Se especializa en resistencia extrema y estrategia defensiva en carreras largas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer id="footer">
+    <p>© 2025 El Rincón del Jobber - Información de Uma Musume Pretty Derby</p>
+</footer>
+
+<script>
+function mostrarMas(boton) {
+    let masInfo = boton.nextElementSibling;
+    masInfo.style.display = masInfo.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* ==== ESTILO BASE - EL RINCÓN DEL JOBBER ==== */
+
+/* Fuente general */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(180deg, #ffe6f0, #f3e5f5);
+}
+
+/* Cabecera */
+#header {
+  background: linear-gradient(90deg, #a64ac9, #ff66b3);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+#header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+#header p {
+  margin: 5px 0 0;
+  font-style: italic;
+}
+
+/* Menú */
+#mainav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #7b1fa2;
+}
+#mainav ul li {
+  margin: 0;
+}
+#mainav ul li a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+#mainav ul li a:hover {
+  background-color: #ff66b3;
+  border-radius: 5px;
+}
+
+/* Sección principal */
+main {
+  background: rgba(255, 255, 255, 0.85);
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+main h2, main h3 {
+  color: #a64ac9;
+}
+
+/* Artículos */
+article {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-left: 5px solid #ff66b3;
+  background-color: #fff0f6;
+  border-radius: 8px;
+}
+
+/* Videos */
+.video {
+  display: inline-block;
+  margin: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Pie de página */
+#footer {
+  background-color: #7b1fa2;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Enlaces generales */
+a {
+  color: #a64ac9;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  #mainav ul {
+    flex-direction: column;
+  }
+  .video iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+.menu-navegacion {
+  background-color: #ff7eb9;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 3px solid #ff4b8a;
+}
+
+.menu-navegacion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-navegacion li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.menu-navegacion a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+.menu-navegacion a:hover {
+  color: yellow;
+  text-shadow: 0 0 5px #fff;
+}
+index.html
+paginas/
+   noticias.html
+   curiosidades.html
+   galeria.html
+   historia.html
+layout/
+   styles/
+      layout.css
+img/

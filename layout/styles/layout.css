@@ -9,6 +9,33 @@ body {
   background: linear-gradient(180deg, #ffe6f0, #f3e5f5);
 }
 
+#container{
+  position: relative;
+}
+
+#imag {
+  width: 100%; /* Image takes up the full container width */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover;
+}
+
+#page-name{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  margin: 0;
+}
+
+#title {
+  background: linear-gradient(90deg, #a64ac9, #ff66b3);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
 /* Cabecera */
 #header {
   background: linear-gradient(90deg, #a64ac9, #ff66b3);
@@ -82,12 +109,16 @@ article {
 }
 
 /* Pie de página */
-#footer {
-  background-color: #7b1fa2;
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
+<footer id="footer">
+  <div class="footer-container">
+    <p>© 2025 El Rincón del Jobber</p>
+    <div class="footer-links">
+      <a href="#">Inicio</a>
+      <a href="#">Acerca de</a>
+      <a href="#">Contacto</a>
+    </div>
+  </div>
+</footer>
 
 /* Enlaces generales */
 a {
